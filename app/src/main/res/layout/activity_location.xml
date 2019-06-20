@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Find it at..."
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white100"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/house"
+            android:hint="House No."
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/street"
+            android:hint="Street Name"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:hint="Location"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:hint="City"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pincode"
+            android:hint="Pincode"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/landmark"
+            android:hint="Landmark"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_next"
+        android:gravity="center"
+        android:text="Next"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white100"
+        android:textSize="15sp"
+        android:id="@+id/location_btn"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loaction_image"
+        android:src="@drawable/location"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

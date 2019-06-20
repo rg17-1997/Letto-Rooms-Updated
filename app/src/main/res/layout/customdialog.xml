@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:id="@+id/popup"
+    android:padding="5dp"
+    android:background="@drawable/dialog_shape"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Sharing is the number of individuals living in a room"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@color/my_spinner_text_color">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/dialog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/dialog_button"
+            />
+        <Button
+            android:id="@+id/dialog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:layout_margin="12dp"
+            android:background="@drawable/dialog_button"
+            />
+        <Button
+            android:id="@+id/dialog3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:background="@drawable/dialog_button"
+            android:layout_margin="12dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/dialog4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:layout_margin="10dp"
+            android:background="@drawable/dialog_button"
+            />
+        <Button
+            android:id="@+id/dialog5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:layout_margin="10dp"
+            android:background="@drawable/dialog_button"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/closedialog"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tick"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="You can choose multiple options"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pricing"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Is priced at..."
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white100"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_price"
+            android:hint="Single Sharing/Month(if available)"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/double_price"
+            android:hint="Double Sharing/Month(if available)"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/triple_price"
+            android:hint="Triple Sharing/Month(if available)"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPostalAddress"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:fontFamily="@font/open_sans_light"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:hint="Electricity Bill"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/electricity_included"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_light"
+            android:gravity="center"
+            android:hint="Included"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:text="|"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/electricity_excluded"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_light"
+            android:gravity="center"
+            android:hint="Excluded"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"
+        android:hint="Preferred Mode of Payment"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_online"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_light"
+            android:gravity="center"
+            android:hint="Online"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="|"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_offline"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_light"
+            android:gravity="center"
+            android:hint="Offline"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:hint="By continuing I agree to Letto Terms of Service,Payment Terms of Service,Privacy Policy"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_next"
+        android:gravity="center"
+        android:text="Finish"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white100"
+        android:textSize="15sp"
+        android:id="@+id/finish_btn"
+        android:layout_margin="20dp"/>
+</LinearLayout>
+</ScrollView>

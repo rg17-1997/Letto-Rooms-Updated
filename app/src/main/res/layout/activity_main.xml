@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="119dp"
+        android:src="@drawable/lettologo"
+        android:layout_margin="20dp"
+        android:id="@+id/logo"/>
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Happy Living, Simplified !"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white100"
+        android:layout_margin="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phno"
+        android:hint="Phone Number"
+        android:textSize="15sp"
+        android:layout_margin="15sp"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_light"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp"
+        android:inputType="number"
+        android:hint="Enter OTP"
+        android:textSize="15sp"
+        android:layout_margin="15sp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:visibility="gone"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resendOtp"
+        android:text="Resend OTP"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_next"
+        android:gravity="center"
+        android:text="Continue"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white100"
+        android:textSize="15sp"
+        android:id="@+id/otp_btn"/>
+
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_next"
+        android:gravity="center"
+        android:text="Next"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/white100"
+        android:textSize="15sp"
+        android:id="@+id/submitotp_btn"
+        android:visibility="gone"/>
+</RelativeLayout>
+
+
+
+</LinearLayout>
